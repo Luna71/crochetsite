@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tyro Crochet</title>
+  <meta name="description" content="Handmade crochet creations, crafted with care &amp; stitched with love. Made to order in the UK." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --plum: #4a2c34;
+      --plum-dark: #321e24;
+      --cream: #e8d5c0;
+      --cream-light: #f5ede3;
+      --cream-page: #faf4ee;
+      --text: #2d1a20;
+      --text-muted: #8a6860;
+      --script: 'Dancing Script', cursive;
+      --body: 'Lora', serif;
+    }
+
+    html, body {
+      width: 100%; height: 100%;
+      overflow: hidden;
+      background: var(--cream-page);
+      color: var(--text);
+      font-family: var(--body);
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 48px;
+      z-index: 10;
+    }
+
+    .nav-logo {
+      font-family: var(--script);
+      font-size: 1.4rem;
+      color: var(--plum);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links {
+      display: flex; gap: 36px; list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--body);
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--plum);
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; }
+
+    .hero {
+      width: 100%; height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      position: relative;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle, #c4a88230 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+
+    .logo-wrap {
+      width: min(280px, 55vw);
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .hero-tagline {
+      font-family: var(--body);
+      font-style: italic;
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: var(--text-muted);
+      letter-spacing: 0.03em;
+      margin-bottom: 44px;
+      max-width: 400px;
+      line-height: 1.6;
+      text-wrap: pretty;
+    }
+
+    .hero-ctas {
+      display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--plum);
+      color: var(--cream);
+      font-family: var(--body);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 14px 36px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--plum-dark); transform: translateY(-1px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--plum);
+      font-family: var(--body);
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 13px 36px;
+      border: 1.5px solid var(--plum);
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+    }
+    .btn-secondary:hover {
+      background: var(--plum);
+      color: var(--cream);
+      transform: translateY(-1px);
+    }
+
+    .home-footer {
+      position: fixed; bottom: 24px; left: 0; right: 0;
+      text-align: center;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="index.html">Tyro Crochet</a>
+    <ul class="nav-links">
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="logo-wrap">
+      <img src="uploads/IMG-20260418-WA0001.jpg" alt="Tyro Crochet logo" />
+    </div>
+    <p class="hero-tagline">Handmade crochet creations, crafted with care &amp; stitched with love.</p>
+    <div class="hero-ctas">
+      <a class="btn-primary" href="gallery.html">See Creations</a>
+      <a class="btn-secondary" href="contact.html">Place an Order</a>
+    </div>
+  </section>
+
+  <p class="home-footer">All pieces handmade &nbsp;·&nbsp; Made to order &nbsp;·&nbsp; UK</p>
+
+</body>
+</html>
