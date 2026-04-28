@@ -372,6 +372,7 @@
 
     /* Notes */
     .pricing-notes {
+      text-align: center;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
@@ -431,6 +432,9 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #c4a88260;
+    }
+    @media (max-width: 520px) {
+      footer { flex-direction: column; align-items: center; text-align: center; padding: 24px; gap: 8px; }
     }
   </style>
 </head>
@@ -599,10 +603,7 @@
           <div class="note-label">UK postage</div>
           <p>Included in all prices</p>
         </div>
-        <div class="pricing-note-item">
-          <div class="note-label">International</div>
-          <p>Available — ask for a shipping quote</p>
-        </div>
+
       </div>
 
       <div class="pricing-cta">

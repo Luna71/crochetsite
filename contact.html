@@ -70,6 +70,9 @@
       justify-content: center;
       padding: 40px 24px;
     }
+    @media (max-height: 700px), (max-width: 520px) {
+      .contact-wrap { align-items: flex-start; }
+    }
 
     .contact-card {
       max-width: 580px;
@@ -223,6 +226,9 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: #c4a88260;
+    }
+    @media (max-width: 520px) {
+      footer { flex-direction: column; align-items: center; text-align: center; padding: 24px; gap: 8px; }
     }
 
     @media (max-width: 520px) {
