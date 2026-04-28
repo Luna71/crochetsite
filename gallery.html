@@ -678,7 +678,15 @@
 
     buildDots();
     goTo(0);
-    window.addEventListener('resize', () => { buildDots(); goTo(0); });
+    let lastVisible = getVisible();
+    window.addEventListener('resize', () => {
+      const nowVisible = getVisible();
+      if (nowVisible !== lastVisible) {
+        lastVisible = nowVisible;
+        buildDots();
+        goTo(0);
+      }
+    });
   </script>
 
 </body>
