@@ -26,8 +26,8 @@
     html { scroll-behavior: smooth; }
 
     body {
-      background: var(--cream-page);
-      color: var(--text);
+      background: var(--plum);
+      color: var(--cream);
       font-family: var(--body);
       min-height: 100vh;
     }
@@ -37,13 +37,13 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 20px 48px;
       border-bottom: 1px solid #c4a88230;
-      background: var(--cream-page);
+      background: var(--plum);
       position: sticky; top: 0; z-index: 10;
     }
     .nav-logo {
       font-family: var(--script);
       font-size: 1.4rem;
-      color: var(--plum);
+      color: var(--cream);
       text-decoration: none;
     }
     .nav-links { display: flex; gap: 36px; list-style: none; }
@@ -51,7 +51,7 @@
       font-size: 0.82rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--plum);
+      color: var(--cream);
       text-decoration: none;
       opacity: 0.65;
       transition: opacity 0.2s;
@@ -66,13 +66,13 @@
     .page-header h1 {
       font-family: var(--script);
       font-size: clamp(2.8rem, 6vw, 4.5rem);
-      color: var(--plum);
+      color: var(--cream);
       font-weight: 600;
       margin-bottom: 12px;
     }
     .page-header p {
       font-style: italic;
-      color: var(--text-muted);
+      color: #e8d5c080;
       font-size: 1rem;
       letter-spacing: 0.02em;
     }
@@ -92,7 +92,7 @@
     .section-label h2 {
       font-family: var(--script);
       font-size: 2rem;
-      color: var(--plum);
+      color: var(--cream);
       white-space: nowrap;
     }
     .section-label::after {
@@ -129,7 +129,7 @@
 
     .gallery-card {
       flex: 0 0 calc((100% - 40px) / 3);
-      background: white;
+      background: var(--plum-dark);
       border-radius: 2px;
       overflow: hidden;
       cursor: pointer;
@@ -168,14 +168,14 @@
     .gallery-card-label h3 {
       font-family: var(--script);
       font-size: 1.3rem;
-      color: var(--plum);
+      color: var(--cream);
       margin-bottom: 2px;
     }
     .gallery-card-label p {
       font-size: 0.78rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: #e8d5c070;
     }
 
     /* Carousel arrows */
@@ -215,7 +215,7 @@
       transition: background 0.2s, transform 0.2s;
     }
     .carousel-dot.active {
-      background: var(--plum);
+      background: var(--cream);
       transform: scale(1.3);
     }
 
@@ -253,7 +253,7 @@
 
     /* ── PRICING SECTION ── */
     .pricing-section {
-      background: var(--plum);
+      background: #2a1820;
       padding: 72px 32px 88px;
     }
     .pricing-inner {

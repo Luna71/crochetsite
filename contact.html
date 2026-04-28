@@ -25,8 +25,8 @@
     html, body {
       height: 100%;
       overflow: hidden;
-      background: var(--cream-page);
-      color: var(--text);
+      background: var(--plum);
+      color: var(--cream);
       font-family: var(--body);
     }
 
@@ -40,13 +40,13 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 20px 48px;
       border-bottom: 1px solid #c4a88230;
-      background: var(--cream-page);
+      background: var(--plum);
       position: sticky; top: 0; z-index: 10;
     }
     .nav-logo {
       font-family: var(--script);
       font-size: 1.4rem;
-      color: var(--plum);
+      color: var(--cream);
       text-decoration: none;
     }
     .nav-links { display: flex; gap: 36px; list-style: none; }
@@ -54,7 +54,7 @@
       font-size: 0.82rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--plum);
+      color: var(--cream);
       text-decoration: none;
       opacity: 0.65;
       transition: opacity 0.2s;
@@ -83,7 +83,7 @@
     .contact-card h1 {
       font-family: var(--script);
       font-size: clamp(2.8rem, 6vw, 4.2rem);
-      color: var(--plum);
+      color: var(--cream);
       font-weight: 600;
       margin-bottom: 16px;
       line-height: 1.1;
@@ -91,7 +91,7 @@
 
     .contact-card .intro {
       font-style: italic;
-      color: var(--text-muted);
+      color: #e8d5c080;
       font-size: 1rem;
       line-height: 1.7;
       margin-bottom: 52px;
@@ -100,7 +100,7 @@
 
     /* ── EMAIL BLOCK ── */
     .email-block {
-      background: var(--plum);
+      background: var(--plum-dark);
       padding: 36px 40px;
       margin-bottom: 52px;
       position: relative;
@@ -157,7 +157,7 @@
     .how-title {
       font-family: var(--script);
       font-size: 1.8rem;
-      color: var(--plum);
+      color: var(--cream);
       margin-bottom: 28px;
     }
 
@@ -166,7 +166,7 @@
       flex-direction: column;
       gap: 0;
       text-align: left;
-      border: 1px solid #c4a88230;
+      border: 1px solid #e8d5c020;
     }
 
     .step {
@@ -174,11 +174,11 @@
       gap: 20px;
       align-items: flex-start;
       padding: 22px 24px;
-      border-bottom: 1px solid #c4a88220;
+      border-bottom: 1px solid #e8d5c015;
       transition: background 0.2s;
     }
     .step:last-child { border-bottom: none; }
-    .step:hover { background: #f0e6d810; }
+    .step:hover { background: #ffffff08; }
 
     .step-num {
       font-family: var(--script);
@@ -186,7 +186,7 @@
       color: var(--cream);
       line-height: 1;
       min-width: 32px;
-      background: var(--plum);
+      background: #e8d5c020;
       width: 44px; height: 44px;
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
@@ -197,12 +197,12 @@
       font-family: var(--body);
       font-weight: 500;
       font-size: 0.95rem;
-      color: var(--text);
+      color: var(--cream);
       margin-bottom: 4px;
     }
     .step-content p {
       font-size: 0.85rem;
-      color: var(--text-muted);
+      color: #e8d5c075;
       font-style: italic;
       line-height: 1.5;
     }

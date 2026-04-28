@@ -26,8 +26,10 @@
     html, body {
       width: 100%; height: 100%;
       overflow: hidden;
-      background: var(--cream-page);
-      color: var(--text);
+      background: var(--plum);
+      background-image: radial-gradient(circle, #c4a88230 1px, transparent 1px);
+      background-size: 28px 28px;
+      color: var(--cream);
       font-family: var(--body);
     }
 
@@ -41,7 +43,7 @@
     .nav-logo {
       font-family: var(--script);
       font-size: 1.4rem;
-      color: var(--plum);
+      color: var(--cream);
       text-decoration: none;
       letter-spacing: 0.01em;
     }
@@ -55,7 +57,7 @@
       font-size: 0.82rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--plum);
+      color: var(--cream);
       text-decoration: none;
       opacity: 0.75;
       transition: opacity 0.2s;
@@ -87,7 +89,7 @@
 
     .logo-wrap img {
       width: 100%;
-      border-radius: 50%;
+      border-radius: 4px;
       display: block;
     }
 
@@ -95,7 +97,7 @@
       font-family: var(--body);
       font-style: italic;
       font-size: clamp(0.95rem, 2vw, 1.15rem);
-      color: var(--text-muted);
+      color: #e8d5c099;
       letter-spacing: 0.03em;
       margin-bottom: 44px;
       max-width: 400px;
@@ -108,8 +110,8 @@
     }
 
     .btn-primary {
-      background: var(--plum);
-      color: var(--cream);
+      background: var(--cream);
+      color: var(--plum);
       font-family: var(--body);
       font-size: 0.8rem;
       letter-spacing: 0.14em;
@@ -120,23 +122,23 @@
       cursor: pointer;
       transition: background 0.2s, transform 0.15s;
     }
-    .btn-primary:hover { background: var(--plum-dark); transform: translateY(-1px); }
+    .btn-primary:hover { background: var(--cream-light); transform: translateY(-1px); }
 
     .btn-secondary {
       background: transparent;
-      color: var(--plum);
+      color: var(--cream);
       font-family: var(--body);
       font-size: 0.8rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       text-decoration: none;
       padding: 13px 36px;
-      border: 1.5px solid var(--plum);
+      border: 1.5px solid #e8d5c070;
       transition: background 0.2s, color 0.2s, transform 0.15s;
     }
     .btn-secondary:hover {
-      background: var(--plum);
-      color: var(--cream);
+      background: var(--cream);
+      color: var(--plum);
       transform: translateY(-1px);
     }
 
@@ -146,7 +148,7 @@
       font-size: 0.72rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--text-muted);
+      color: #e8d5c055;
     }
   </style>
 </head>
